@@ -1,0 +1,14 @@
+#shadows #container{
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fc3;
+    box-shadow: -10px 10px 15px 10px #333; /* The fourth attribute is the spread attribute */
+}
+
+#shadows h1 {
+    color: white;
+    text-shadow: 1px 2px 5px blue, 0 2px 10px red; /* The vertical shadow comes before the horizontal. The third is the blur */
+}
+

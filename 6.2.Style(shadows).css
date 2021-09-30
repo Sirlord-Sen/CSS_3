@@ -1,0 +1,42 @@
+.button{
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(#fc3, #f91); 
+    border: solid 1px #999;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px rgba(255,255,255,0.9);
+}
+
+@keyframes buttonAnimationhover
+{
+    from { padding: 10px 20px; font-size: inherit; }
+    to{ padding: 15px 30px; font-size: 24px; }
+}
+
+.button:hover{
+    border-color: #333;
+    text-shadow: 2px 5px 5px black;
+    background: #f91;
+    background: linear-gradient(to top #fc3, #f91);
+    animation-name: buttonAnimationhover;
+    animation-duration: .2s;
+     /* This prevents it from jumping back in */
+}
+
+.button:active{
+    position: relative;
+    top: 1px; /* This makes the button move 1px downwards when it is pressed */
+}
+
+.button-alt{
+    background: radial-gradient(#fc3, #f91, black);
+}
+
+.button-alt:hover{
+    background: linear-gradient(blue, green);
+    text-shadow: 2px 5px 5px white;
+}

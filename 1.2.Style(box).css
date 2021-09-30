@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+    padding: 50px; /* When you add padding to the attributes, it increases the size of the box. Therefore, you have to reduce the height and width to cater for that. However, you can use box-sizing to take care of that */
+    
+    box-sizing: border-box;
+    
+    border-radius: 20px; /* This is used to change the radius of the box */
+    
+    border-bottom-left-radius:100px;
+    border-top-right-radius: 100px;
+}
